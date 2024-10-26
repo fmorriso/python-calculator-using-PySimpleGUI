@@ -5,7 +5,6 @@ def get_python_version() -> str:
     return f'{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}'
 
 
-# Press the green button in the gutter to run the script.
 def verify_yes_no_popup_works():
     resp = sg.popup_yes_no( 'Do you want to exit?', title='Yes/No',
                             font='"Courier New" 20 bold', keep_on_top=True, text_color='white',
