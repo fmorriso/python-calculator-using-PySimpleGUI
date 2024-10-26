@@ -1,4 +1,4 @@
-# Python-Calculator-With-PyQt-Prompts
+# Python-Calculator-With-PySimpleGUI-Prompts
 A simple calculator written in Python with prompts and messages displayed using PySimpleGUI
 
 ## Tools Used
