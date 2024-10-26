@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="add InputUtils class with boiler plate code.">
-      <change afterPath="$PROJECT_DIR$/gui_settings.py" afterDir="false" />
+    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="Start of GuiSettings enumeration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/input_utilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +117,7 @@
       <workItem from="1729955455466" duration="282000" />
       <workItem from="1729955834166" duration="84000" />
       <workItem from="1729968906106" duration="157000" />
-      <workItem from="1729969072508" duration="2167000" />
+      <workItem from="1729969072508" duration="3212000" />
     </task>
     <task id="LOCAL-00001" summary="add README and git ignore">
       <option name="closed" value="true" />
@@ -175,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729969747998</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Start of GuiSettings enumeration">
+      <option name="closed" value="true" />
+      <created>1729973446945</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729973446945</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,9 +208,10 @@
     <MESSAGE value="update tools used" />
     <MESSAGE value="remove unnecessary comment" />
     <MESSAGE value="add InputUtils class with boiler plate code." />
-    <option name="LAST_COMMIT_MESSAGE" value="add InputUtils class with boiler plate code." />
+    <MESSAGE value="Start of GuiSettings enumeration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start of GuiSettings enumeration" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1729973165724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1729974282931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

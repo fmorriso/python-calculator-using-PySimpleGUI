@@ -1,6 +1,8 @@
 import decimal, sys
 import PySimpleGUI as sg
 
+from gui_settings import GuiSettings
+
 
 class InputUtils:
 
@@ -28,7 +30,12 @@ class InputUtils:
     @staticmethod
     def get_yesno_response(title: str, question: str) -> bool:
         """get a yes/no (True/False) response to a question"""
-        return True
+        resp = sg.popup_yes_no(question, title=title,
+                               font=GuiSettings.font, keep_on_top=True,
+                               text_color=GuiSettings.text_color,
+                               button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+                               background_color=GuiSettings.background_color)
+        return resp.lower()[0] == 'y'
 
 
     @staticmethod

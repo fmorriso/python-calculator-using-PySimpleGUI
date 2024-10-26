@@ -2,6 +2,7 @@ import sys, platform
 import PySimpleGUI as sg
 
 from gui_settings import GuiSettings
+from input_utilities import InputUtils
 
 
 def get_python_version() -> str:
@@ -9,14 +10,10 @@ def get_python_version() -> str:
 
 
 def verify_yes_no_popup_works():
-    resp = sg.popup_yes_no( 'Do you want to exit?', title='Yes/No',
-                            font=GuiSettings.font, keep_on_top=True,
-                            text_color=GuiSettings.text_color,
-                            button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
-                            background_color=GuiSettings.background_color)
+    """Verify that yes/no question utility works correctly."""
+    resp: bool = InputUtils.get_yesno_response('Exit?','Do you want to quit?')
     print(f'{type(resp)=}, {resp=}')
-    # if sg.popup_yes_no('Do you want to exit?') == 'Yes':
-    #     exit()
+
 
 def main():
     msg = f'Python version: {get_python_version()} on {platform.system()} {platform.release()}'
