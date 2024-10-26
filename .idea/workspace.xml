@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="update tools used">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="remove unnecessary comment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +92,7 @@
       <workItem from="1729952261249" duration="1713000" />
       <workItem from="1729954209953" duration="2000" />
       <workItem from="1729955455466" duration="282000" />
-      <workItem from="1729955834166" duration="10000" />
+      <workItem from="1729955834166" duration="84000" />
     </task>
     <task id="LOCAL-00001" summary="add README and git ignore">
       <option name="closed" value="true" />
@@ -136,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729955712099</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="remove unnecessary comment">
+      <option name="closed" value="true" />
+      <created>1729955900469</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729955900470</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,9 +165,10 @@
     <MESSAGE value="add references" />
     <MESSAGE value="add Yes/No dialog test" />
     <MESSAGE value="update tools used" />
-    <option name="LAST_COMMIT_MESSAGE" value="update tools used" />
+    <MESSAGE value="remove unnecessary comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary comment" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1729953922676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1729955851900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
