@@ -10,6 +10,9 @@ A simple calculator written in Python with prompts and messages displayed using 
 | VSCode      |   1.94.2 |
 | PyCharm     | 2024.2.1 |
 
+## References
+* [PySimpleGUI Popups](https://docs.pysimplegui.com/en/latest/documentation/module/popups/)
+* [PySimpleGUI The Windowing APIs - Popups](https://docs.pysimplegui.com/en/latest/documentation/quick_start/windowing_apis_popup_windows/)
 
 ## Change History
 
