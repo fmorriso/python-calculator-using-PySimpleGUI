@@ -9,7 +9,7 @@ def get_python_version() -> str:
 def verify_yes_no_popup_works():
     resp = sg.popup_yes_no( 'Do you want to exit?', title='Yes/No',
                             font='"Courier New" 20', keep_on_top=True, text_color='white',
-                            button_color='#000088')
+                            button_color=('#00008B','white'), background_color='#00008B')
     print(f'{type(resp)=}, {resp=}')
     # if sg.popup_yes_no('Do you want to exit?') == 'Yes':
     #     exit()
