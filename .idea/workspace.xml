@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="improved get_single_choice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/input_utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +116,7 @@
       <workItem from="1729955455466" duration="282000" />
       <workItem from="1729955834166" duration="84000" />
       <workItem from="1729968906106" duration="157000" />
-      <workItem from="1729969072508" duration="9820000" />
+      <workItem from="1729969072508" duration="10816000" />
     </task>
     <task id="LOCAL-00001" summary="add README and git ignore">
       <option name="closed" value="true" />
@@ -207,7 +206,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729994548578</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="improved get_single_choice">
+      <option name="closed" value="true" />
+      <created>1729995354970</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729995354970</updated>
+    </task>
+    <task id="LOCAL-00013" summary="improved get_single_choice">
+      <option name="closed" value="true" />
+      <created>1729995508642</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729995508642</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +265,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1729995146431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1729996152054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
