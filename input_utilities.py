@@ -41,4 +41,14 @@ class InputUtils:
     @staticmethod
     def get_single_choice(title: str, prompt: str, choices: list[str]) -> str:
         """get a single choice from a list of choices"""
-        return choices[0]
+        layout = [
+            [sg.Text(prompt)],
+            [sg.Combo(values=choices, readonly=True, key='idx', default_value=choices[0])],
+            [sg.Button('Ok', button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background))]
+        ]
+        window = sg.Window(title, layout)
+        while True:
+            event, values = window.read()
+            if event == GuiSettings.button_OK:
+                return values[0]
+

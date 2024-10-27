@@ -15,10 +15,17 @@ def verify_yes_no_popup_works():
     print(f'{type(resp)=}, {resp=}')
 
 
+def verify_get_single_choice_from_list_works():
+    choices: list[str] = ['Apple','Banana','Orange']
+    choice = InputUtils.get_single_choice('Fruit Choice', 'Pick a fruit', choices)
+    print(f'{type(choice)=}, {choice=}')
+
+
 def main():
     msg = f'Python version: {get_python_version()} on {platform.system()} {platform.release()}'
     print(msg)
-    verify_yes_no_popup_works()
+    # verify_yes_no_popup_works()
+    verify_get_single_choice_from_list_works()
 
 
 if __name__ == '__main__':
