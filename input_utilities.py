@@ -45,13 +45,15 @@ class InputUtils:
         layout = [
             [sg.Text(prompt, text_color=GuiSettings.text_color, background_color=GuiSettings.background_color)],
             [
-                sg.Combo(values=choices,
-                      readonly=True,
-                      key=GuiSettings.combo_selection_key,
-                      default_value=choices[0],
-                      text_color=GuiSettings.background_color,
-                      background_color=GuiSettings.text_color,
-                      font=GuiSettings.font
+                sg.Combo(
+                    values=choices,
+                    readonly=True,
+                    key=GuiSettings.combo_selection_key,
+                    default_value=choices[0],
+                    text_color=GuiSettings.background_color,
+                    background_color=GuiSettings.text_color,
+                    font=GuiSettings.font,
+
                 )
             ],
             [
@@ -64,6 +66,7 @@ class InputUtils:
                            button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
                            font=GuiSettings.font,
                            auto_size_text=True,
+                           keep_on_top=True,
                            size=(400, 200))
         choice = ''
         while True:
