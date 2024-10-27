@@ -31,12 +31,16 @@ class InputUtils:
     @staticmethod
     def get_yesno_response(title: str, question: str) -> bool:
         """get a yes/no (True/False) response to a question"""
-        resp = sg.popup_yes_no(question, title=title,
-                               font=GuiSettings.font,
-                               keep_on_top=True,
-                               text_color=GuiSettings.text_color,
-                               button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
-                               background_color=GuiSettings.background_color)
+        resp = sg.popup_yes_no(
+      question,
+            title=title,
+            font=GuiSettings.font,
+            keep_on_top=True,
+            text_color=GuiSettings.text_color,
+            button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+            background_color=GuiSettings.background_color,
+            modal=True
+        )
         return resp.lower()[0] == 'y'
 
 
@@ -54,8 +58,7 @@ class InputUtils:
                     default_value=choices[0],
                     text_color=GuiSettings.background_color,
                     background_color=GuiSettings.text_color,
-                    font=GuiSettings.font,
-
+                    font=GuiSettings.font
                 )
             ],
             [
@@ -63,13 +66,16 @@ class InputUtils:
                 sg.Button(GuiSettings.button_CANCEL, button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background))
             ]
         ]
-        window = sg.Window(title, layout,
-                           background_color=GuiSettings.background_color,
-                           button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
-                           font=GuiSettings.font,
-                           auto_size_text=True,
-                           keep_on_top=True,
-                           size=(gui_scaling.scaled_width, gui_scaling.scaled_height))
+        window = sg.Window(
+            title,
+            layout,
+            background_color=GuiSettings.background_color,
+            button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+            font=GuiSettings.font,
+            auto_size_text=True,
+            keep_on_top=True,
+            size=(gui_scaling.scaled_width, gui_scaling.scaled_height)
+        )
         choice = ''
         while True:
             event, values = window.read()

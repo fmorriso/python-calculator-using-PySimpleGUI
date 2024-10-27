@@ -24,7 +24,7 @@ def verify_get_single_choice_from_list_works():
 def main():
     msg = f'Python version: {get_python_version()} on {platform.system()} {platform.release()}'
     print(msg)
-    # verify_yes_no_popup_works()
+    verify_yes_no_popup_works()
     verify_get_single_choice_from_list_works()
 
 
