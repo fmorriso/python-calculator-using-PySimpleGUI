@@ -39,11 +39,12 @@ class InputUtils:
       question,
             title=title,
             font=GuiSettings.font,
+            grab_anywhere=True,
             keep_on_top=True,
             text_color=GuiSettings.text_color,
             button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
             background_color=GuiSettings.background_color,
-            modal=True
+            modal=True,
         )
         return resp.lower()[0] == 'y'
 
@@ -77,7 +78,8 @@ class InputUtils:
             font=GuiSettings.font,
             auto_size_text=True,
             keep_on_top=True,
-            size=(InputUtils.__scaling.scaled_width, InputUtils.__scaling.scaled_height)
+            size=(InputUtils.__scaling.scaled_width, InputUtils.__scaling.scaled_height),
+            grab_anywhere=True
         )
         choice = ''
         while True:
