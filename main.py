@@ -1,7 +1,6 @@
-import sys, platform
-import PySimpleGUI as sg
+import platform
+import sys
 
-from gui_settings import GuiSettings
 from input_utilities import InputUtils
 
 
