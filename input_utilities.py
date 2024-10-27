@@ -2,6 +2,7 @@ import decimal, sys
 from typing import ClassVar
 
 import PySimpleGUI as sg
+from pygame.display import get_window_size
 
 from gui_scaling import GuiScaling
 from gui_settings import GuiSettings
@@ -10,7 +11,11 @@ from gui_settings import GuiSettings
 class InputUtils:
     """A set of utilities for performing common input operations."""
 
-    __scaling: ClassVar[GuiScaling] = GuiScaling()
+    @staticmethod
+    def get_scaled_size() -> (int, int):
+        scaling = GuiScaling()
+        return scaling.scaled_width, scaling.scaled_height
+
 
     @staticmethod
     def get_whole_number(title: str, prompt: str) -> int:
@@ -37,15 +42,15 @@ class InputUtils:
     def get_yesno_response(title: str, question: str) -> bool:
         """get a yes/no (True/False) response to a question"""
         resp = sg.popup_yes_no(
-      question,
-            title=title,
-            font=GuiSettings.font,
-            grab_anywhere=True,
-            keep_on_top=True,
-            text_color=GuiSettings.text_color,
-            button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
-            background_color=GuiSettings.background_color,
-            modal=True,
+            question,
+            title = title,
+            font = GuiSettings.font,
+            grab_anywhere = True,
+            keep_on_top = True,
+            text_color = GuiSettings.text_color,
+            button_color = (GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+            background_color = GuiSettings.background_color,
+            modal = True,
         )
         return resp.lower()[0] == 'y'
 
@@ -54,33 +59,35 @@ class InputUtils:
     def get_single_choice(title: str, prompt: str, choices: list[str]) -> str | None:
         """get a single choice from a list of choices"""
         layout = [
-            [sg.Text(prompt, text_color=GuiSettings.text_color, background_color=GuiSettings.background_color)],
+            [sg.Text(prompt, text_color = GuiSettings.text_color, background_color = GuiSettings.background_color)],
             [
                 sg.Combo(
-                    values=choices,
-                    readonly=True,
-                    key=GuiSettings.combo_selection_key,
-                    default_value=choices[0],
-                    text_color=GuiSettings.background_color,
-                    background_color=GuiSettings.text_color,
-                    font=GuiSettings.font
+                    values = choices,
+                    readonly = True,
+                    key = GuiSettings.combo_selection_key,
+                    default_value = choices[0],
+                    text_color = GuiSettings.background_color,
+                    background_color = GuiSettings.text_color,
+                    font = GuiSettings.font
                 )
             ],
             [
-                sg.Button(GuiSettings.button_OK, button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background)),
-                sg.Button(GuiSettings.button_CANCEL, button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background))
+                sg.Button(GuiSettings.button_OK,
+                          button_color = (GuiSettings.button_color_foreground, GuiSettings.button_color_background)),
+                sg.Button(GuiSettings.button_CANCEL,
+                          button_color = (GuiSettings.button_color_foreground, GuiSettings.button_color_background))
             ]
         ]
         window = sg.Window(
             title,
             layout,
-            background_color=GuiSettings.background_color,
-            button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
-            font=GuiSettings.font,
-            auto_size_text=True,
-            keep_on_top=True,
-            size=(InputUtils.__scaling.scaled_width, InputUtils.__scaling.scaled_height),
-            grab_anywhere=True
+            background_color = GuiSettings.background_color,
+            button_color = (GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+            font = GuiSettings.font,
+            auto_size_text = True,
+            keep_on_top = True,
+            size = InputUtils.get_scaled_size(),
+            grab_anywhere = True
         )
         choice = ''
         while True:
