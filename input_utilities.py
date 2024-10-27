@@ -8,6 +8,7 @@ from gui_settings import GuiSettings
 
 
 class InputUtils:
+    """A set of utilities for performing common input operations."""
 
     __scaling: ClassVar[GuiScaling] = GuiScaling()
 

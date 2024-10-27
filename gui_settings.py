@@ -1,6 +1,7 @@
 from enum import StrEnum, auto
 
 class GuiSettings(StrEnum):
+    """Store common GUI settings as enumerated constants."""
     background_color = '#00008B',
     button_color_foreground = '#00008B',
     button_color_background = '#FFFFFF',
