@@ -7,6 +7,7 @@ A simple calculator written in Python with prompts and messages displayed using 
 |:------------|---------:|
 | Python      |   3.13.0 |
 | PySimpleGUI |    5.0.7 |
+| Numpy       |    2.1.2 |
 | VSCode      |   1.94.2 |
 | PyCharm     | 2024.2.4 |
 

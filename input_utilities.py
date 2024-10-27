@@ -1,6 +1,6 @@
 import decimal, sys
 from decimal import Decimal
-from typing import ClassVar
+import numpy
 
 import PySimpleGUI as sg
 from pygame.display import get_window_size
@@ -15,6 +15,7 @@ class InputUtils:
 
     @staticmethod
     def get_scaled_size() -> (int, int):
+        """get the scalesd size in the form of a tuple (width, height)."""
         scaling = GuiScaling()
         return scaling.scaled_width, scaling.scaled_height
 
@@ -22,13 +23,34 @@ class InputUtils:
     @staticmethod
     def get_whole_number(title: str, prompt: str) -> int:
         """Get a whole number as directed by the specified prompt."""
-        return 0
+        number = numpy.nan
+
+        waiting_for_valid_input: bool = True
+        while waiting_for_valid_input:
+            text = sg.popup_get_text(
+                title = title,
+                message = prompt,
+                font = GuiSettings.font,
+                grab_anywhere = True,
+                keep_on_top = True,
+                text_color = GuiSettings.text_color,
+                button_color = (
+                    GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+                background_color = GuiSettings.background_color,
+                modal = True)
+            try:
+                number = int(text)
+                waiting_for_valid_input = False
+            except ValueError as e:
+                title = 'Invalid Input - Try Again'
+
+        return number
 
 
     @staticmethod
     def get_floating_point_number(title: str, prompt: str) -> float:
         """return a floating-point number as directed by the prompt"""
-        number = sys.float_info.min
+        number: float = numpy.nan
 
         waiting_for_valid_input: bool = True
         while waiting_for_valid_input:
@@ -54,6 +76,7 @@ class InputUtils:
 
     @staticmethod
     def get_decimal_number(title: str, prompt: str) -> decimal.Decimal:
+        """Return a decimal number as directed by the prompt."""
         number = decimal.Decimal('nan')
 
         waiting_for_valid_input: bool = True
@@ -69,6 +92,7 @@ class InputUtils:
                     GuiSettings.button_color_foreground, GuiSettings.button_color_background),
                 background_color = GuiSettings.background_color,
                 modal = True)
+            # use try/except to make sure user inputs a valid number
             try:
                 number = Decimal(text)
                 waiting_for_valid_input = False

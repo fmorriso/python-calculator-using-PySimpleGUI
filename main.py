@@ -31,13 +31,19 @@ def verify_get_decimal_number_works():
     print(f'{type(n)=}, {n=}, {n*2=}')
 
 
+def verify_get_whole_number_works():
+    n: int = InputUtils.get_whole_number(title = 'Eggs', prompt = 'Enter number of eggs')
+    print(f'{type(n)=}, {n=}, {n*2=}')
+
+
 def main():
     msg = f'Python version: {get_python_version()} on {platform.system()} {platform.release()}'
     print(msg)
-    verify_yes_no_popup_works()
-    verify_get_single_choice_from_list_works()
-    verify_get_floating_point_number_works()
-    verify_get_decimal_number_works()
+    # verify_yes_no_popup_works()
+    # verify_get_single_choice_from_list_works()
+    # verify_get_floating_point_number_works()
+    # verify_get_decimal_number_works()
+    verify_get_whole_number_works()
 
 
 if __name__ == '__main__':
