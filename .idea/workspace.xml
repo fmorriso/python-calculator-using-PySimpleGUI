@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="refactor window scaling">
+    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="start of get_floating_point_number">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/input_utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +120,7 @@
       <workItem from="1729997376018" duration="820000" />
       <workItem from="1730029893226" duration="1092000" />
       <workItem from="1730037626077" duration="1405000" />
-      <workItem from="1730039499727" duration="697000" />
+      <workItem from="1730039499727" duration="1034000" />
     </task>
     <task id="LOCAL-00001" summary="add README and git ignore">
       <option name="closed" value="true" />
@@ -307,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730039018141</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="start of get_floating_point_number">
+      <option name="closed" value="true" />
+      <created>1730040247044</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1730040247044</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,9 +349,10 @@
     <MESSAGE value="add grab_anywhere = True" />
     <MESSAGE value="add documentation comments" />
     <MESSAGE value="refactor window scaling" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor window scaling" />
+    <MESSAGE value="start of get_floating_point_number" />
+    <option name="LAST_COMMIT_MESSAGE" value="start of get_floating_point_number" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1730038985066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1730040396716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -36,7 +36,7 @@ class InputUtils:
 
 
     @staticmethod
-    def get_floating_point_number(title: str, prompt: str) -> float:
+    def get_floating_point_number(title: str, prompt: str) -> decimal.Decimal:
         waiting_for_valid_input = True
         number = Decimal('NaN')
         while waiting_for_valid_input:
@@ -52,10 +52,10 @@ class InputUtils:
                 background_color = GuiSettings.background_color,
                 modal = True)
             try:
-                number = float(text)
+                number = Decimal(text)
                 waiting_for_valid_input = False
-            except ValueError:
-                sg.popup_quick_message('Invalid number - try again.', 'Invalid input', modal = True, auto_close = False )
+            except Exception:
+                title = 'Invalid Input - Try Again'
 
         return number
 
