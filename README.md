@@ -16,8 +16,7 @@ A simple calculator written in Python with prompts and messages displayed using 
 
 ## Change History
 
-| Date       | Description                                                                        |
-|:-----------|:-----------------------------------------------------------------------------------|
-| 2024-10-26 | Initial creation                                                                   |
-
-
+| Date       | Description                    |
+|:-----------|:-------------------------------|
+| 2024-10-26 | Initial creation               |
+| 2024-10-27 | Minor changes to scaling logic |

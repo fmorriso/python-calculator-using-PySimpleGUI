@@ -1,4 +1,6 @@
 import decimal, sys
+from typing import ClassVar
+
 import PySimpleGUI as sg
 
 from gui_scaling import GuiScaling
@@ -6,6 +8,8 @@ from gui_settings import GuiSettings
 
 
 class InputUtils:
+
+    __scaling: ClassVar[GuiScaling] = GuiScaling()
 
     @staticmethod
     def get_whole_number(title: str, prompt: str) -> int:
@@ -47,7 +51,6 @@ class InputUtils:
     @staticmethod
     def get_single_choice(title: str, prompt: str, choices: list[str]) -> str | None:
         """get a single choice from a list of choices"""
-        gui_scaling = GuiScaling(pct=0.2)
         layout = [
             [sg.Text(prompt, text_color=GuiSettings.text_color, background_color=GuiSettings.background_color)],
             [
@@ -74,7 +77,7 @@ class InputUtils:
             font=GuiSettings.font,
             auto_size_text=True,
             keep_on_top=True,
-            size=(gui_scaling.scaled_width, gui_scaling.scaled_height)
+            size=(InputUtils.__scaling.scaled_width, InputUtils.__scaling.scaled_height)
         )
         choice = ''
         while True:

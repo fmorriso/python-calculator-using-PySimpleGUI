@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="scale some of the input utility windows" />
+    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="optimize imports">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/input_utilities.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,6 +118,7 @@
       <workItem from="1729968906106" duration="157000" />
       <workItem from="1729969072508" duration="11357000" />
       <workItem from="1729997376018" duration="820000" />
+      <workItem from="1730029893226" duration="664000" />
     </task>
     <task id="LOCAL-00001" summary="add README and git ignore">
       <option name="closed" value="true" />
@@ -260,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729998188851</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="optimize imports">
+      <option name="closed" value="true" />
+      <created>1730029939605</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1730029939605</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,9 +302,10 @@
     <MESSAGE value="rudimentary get_single_choice" />
     <MESSAGE value="improved get_single_choice" />
     <MESSAGE value="scale some of the input utility windows" />
-    <option name="LAST_COMMIT_MESSAGE" value="scale some of the input utility windows" />
+    <MESSAGE value="optimize imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimize imports" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1729998167141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1730030561468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
