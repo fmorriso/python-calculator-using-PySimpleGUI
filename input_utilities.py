@@ -44,17 +44,27 @@ class InputUtils:
         """get a single choice from a list of choices"""
         layout = [
             [sg.Text(prompt, text_color=GuiSettings.text_color, background_color=GuiSettings.background_color)],
-            [sg.Combo(values=choices, readonly=True, key=GuiSettings.combo_selection_key, default_value=choices[0])],
+            [
+                sg.Combo(values=choices,
+                      readonly=True,
+                      key=GuiSettings.combo_selection_key,
+                      default_value=choices[0],
+                      text_color=GuiSettings.background_color,
+                      background_color=GuiSettings.text_color,
+                      font=GuiSettings.font
+                )
+            ],
             [
                 sg.Button(GuiSettings.button_OK, button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background)),
                 sg.Button(GuiSettings.button_CANCEL, button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background))
-             ]
+            ]
         ]
         window = sg.Window(title, layout,
                            background_color=GuiSettings.background_color,
                            button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
                            font=GuiSettings.font,
-                           auto_size_text=True, size=(400, 200))
+                           auto_size_text=True,
+                           size=(400, 200))
         choice = ''
         while True:
             event, values = window.read()
