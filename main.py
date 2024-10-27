@@ -1,3 +1,4 @@
+import decimal
 import platform
 import sys
 
@@ -25,12 +26,18 @@ def verify_get_floating_point_number_works():
     print(f'{type(n)=}, {n=}')
 
 
+def verify_get_decimal_number_works():
+    n: decimal.Decimal = InputUtils.get_decimal_number(title='Radius', prompt =  'Enter radius')
+    print(f'{type(n)=}, {n=}, {n*2=}')
+
+
 def main():
     msg = f'Python version: {get_python_version()} on {platform.system()} {platform.release()}'
     print(msg)
     verify_yes_no_popup_works()
     verify_get_single_choice_from_list_works()
     verify_get_floating_point_number_works()
+    verify_get_decimal_number_works()
 
 
 if __name__ == '__main__':

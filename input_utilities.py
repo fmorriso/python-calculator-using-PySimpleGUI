@@ -26,19 +26,37 @@ class InputUtils:
 
 
     @staticmethod
-    def get_decimal_number(title: str, prompt: str) -> decimal.Decimal:
+    def get_floating_point_number(title: str, prompt: str) -> float:
         """return a floating-point number as directed by the prompt"""
-        min = 0
-        max = decimal.MAX_EMAX
-        decimals = sys.float_info.dig
-        # code needed here
-        return decimal.Decimal('0')
+        number = sys.float_info.min
+
+        waiting_for_valid_input: bool = True
+        while waiting_for_valid_input:
+            text = sg.popup_get_text(
+                title = title,
+                message = prompt,
+                font = GuiSettings.font,
+                grab_anywhere = True,
+                keep_on_top = True,
+                text_color = GuiSettings.text_color,
+                button_color = (
+                    GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+                background_color = GuiSettings.background_color,
+                modal = True)
+            try:
+                number = float(text)
+                waiting_for_valid_input = False
+            except ValueError as e:
+                title = 'Invalid Input - Try Again'
+
+        return number
 
 
     @staticmethod
-    def get_floating_point_number(title: str, prompt: str) -> decimal.Decimal:
-        waiting_for_valid_input = True
-        number = Decimal('NaN')
+    def get_decimal_number(title: str, prompt: str) -> decimal.Decimal:
+        number = decimal.Decimal('nan')
+
+        waiting_for_valid_input: bool = True
         while waiting_for_valid_input:
             text = sg.popup_get_text(
                 title = title,
@@ -54,7 +72,7 @@ class InputUtils:
             try:
                 number = Decimal(text)
                 waiting_for_valid_input = False
-            except Exception:
+            except decimal.InvalidOperation as e:
                 title = 'Invalid Input - Try Again'
 
         return number

@@ -13,6 +13,7 @@ A simple calculator written in Python with prompts and messages displayed using 
 ## References
 * [PySimpleGUI Popups](https://docs.pysimplegui.com/en/latest/documentation/module/popups/)
 * [PySimpleGUI The Windowing APIs - Popups](https://docs.pysimplegui.com/en/latest/documentation/quick_start/windowing_apis_popup_windows/)
+* [Python Decimal class]()https://docs.python.org/3/library/decimal.html
 
 ## Change History
 
