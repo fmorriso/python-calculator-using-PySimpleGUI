@@ -20,11 +20,17 @@ def verify_get_single_choice_from_list_works():
     print(f'{type(choice)=}, {choice=}')
 
 
+def verify_get_floating_point_number_works():
+    n: float = InputUtils.get_floating_point_number('Deposit Amount','Enter deposit amount')
+    print(f'{type(n)=}, {n=}')
+
+
 def main():
     msg = f'Python version: {get_python_version()} on {platform.system()} {platform.release()}'
     print(msg)
     verify_yes_no_popup_works()
     verify_get_single_choice_from_list_works()
+    verify_get_floating_point_number_works()
 
 
 if __name__ == '__main__':

@@ -1,4 +1,5 @@
 import decimal, sys
+from decimal import Decimal
 from typing import ClassVar
 
 import PySimpleGUI as sg
@@ -10,6 +11,7 @@ from gui_settings import GuiSettings
 
 class InputUtils:
     """A set of utilities for performing common input operations."""
+
 
     @staticmethod
     def get_scaled_size() -> (int, int):
@@ -35,7 +37,27 @@ class InputUtils:
 
     @staticmethod
     def get_floating_point_number(title: str, prompt: str) -> float:
-        return 0
+        waiting_for_valid_input = True
+        number = Decimal('NaN')
+        while waiting_for_valid_input:
+            text = sg.popup_get_text(
+                title = title,
+                message = prompt,
+                font = GuiSettings.font,
+                grab_anywhere = True,
+                keep_on_top = True,
+                text_color = GuiSettings.text_color,
+                button_color = (
+                    GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+                background_color = GuiSettings.background_color,
+                modal = True)
+            try:
+                number = float(text)
+                waiting_for_valid_input = False
+            except ValueError:
+                sg.popup_quick_message('Invalid number - try again.', 'Invalid input', modal = True, auto_close = False )
+
+        return number
 
 
     @staticmethod
