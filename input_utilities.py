@@ -31,7 +31,8 @@ class InputUtils:
     def get_yesno_response(title: str, question: str) -> bool:
         """get a yes/no (True/False) response to a question"""
         resp = sg.popup_yes_no(question, title=title,
-                               font=GuiSettings.font, keep_on_top=True,
+                               font=GuiSettings.font,
+                               keep_on_top=True,
                                text_color=GuiSettings.text_color,
                                button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
                                background_color=GuiSettings.background_color)
@@ -39,17 +40,29 @@ class InputUtils:
 
 
     @staticmethod
-    def get_single_choice(title: str, prompt: str, choices: list[str]) -> str:
+    def get_single_choice(title: str, prompt: str, choices: list[str]) -> str | None:
         """get a single choice from a list of choices"""
         selection_key = 'idx'
         layout = [
             [sg.Text(prompt, text_color=GuiSettings.text_color, background_color=GuiSettings.background_color)],
             [sg.Combo(values=choices, readonly=True, key=selection_key, default_value=choices[0])],
-            [sg.Button('Ok', button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background))]
+            [sg.Button(GuiSettings.button_OK, button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background))],
+            [sg.Button(GuiSettings.button_CANCEL, button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background))]
         ]
-        window = sg.Window(title, layout, background_color=GuiSettings.background_color)
+        window = sg.Window(title, layout,
+                           background_color=GuiSettings.background_color,
+                           button_color=(GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+                           font=GuiSettings.font)
+        choice = ''
         while True:
             event, values = window.read()
-            if event == GuiSettings.button_OK:
-                return values[selection_key]
+            match event:
+                case GuiSettings.button_OK:
+                    choice = values[selection_key]
+                    break
+                case _:
+                    choice = ''
+                    break
 
+        window.close()
+        return choice

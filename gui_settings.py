@@ -5,6 +5,7 @@ class GuiSettings(StrEnum):
     button_color_foreground = '#00008B',
     button_color_background = '#FFFFFF',
     button_OK = 'Ok',
-    font = '"Courier New" 20 bold',
+    button_CANCEL = 'Cancel',
+    font = '"Courier New" 16 bold',
     text_color='#FFFFFF'
 
