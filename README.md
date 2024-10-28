@@ -1,5 +1,6 @@
 # Python Calculator with PySimpleGUI Prompts
 A simple calculator written in Python with prompts and messages displayed using PySimpleGUI
+instead of input() and print().
 
 ## Tools Used
 
