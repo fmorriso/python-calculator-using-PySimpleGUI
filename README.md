@@ -24,3 +24,4 @@ instead of input() and print().
 |:-----------|:-----------------------------------|
 | 2024-10-26 | Initial creation                   |
 | 2024-10-27 | Full calculation mode implemented. |
+| 2024-10-28 | Add MathOperation enumeration.     |

@@ -3,6 +3,7 @@ import platform
 import sys
 
 from input_utilities import InputUtils
+from mathematical_operations import MathOperation
 from output_utilities import OutputUtils
 
 
@@ -37,19 +38,21 @@ def verify_get_whole_number_works():
     print(f'{type(n)=}, {n=}, {n*2=}')
 
 def get_operation() -> str:
-    choices: list[str] = ['+', '-', '*', '/']
+    choices: list[str] = MathOperation.get_operations_list()
     opr = InputUtils.get_single_choice('Operation', 'Select an operation', choices)
     return opr
 def perform_operation(num1, num2, operation):
     match operation:
-        case '+':
+        case MathOperation.addition:
             return num1 + num2
-        case '-':
+        case MathOperation.subtraction:
             return num1 - num2
-        case '*':
+        case MathOperation.multiplication:
             return num1 * num2
-        case '/':
+        case MathOperation.division:
             return num1 / num2
+        case MathOperation.modulo:
+            return num1 % num2
 
 def perform_one_calculation():
     num1 = InputUtils.get_decimal_number('First', 'Enter the first number:')
