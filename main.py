@@ -64,7 +64,7 @@ def perform_one_calculation():
     num2 = InputUtils.get_decimal_number('Second', 'Enter the second number:')
     operation: MathOperation = get_operation()
     result = perform_operation(num1, num2, operation)
-    msg = f'{num1} {operation[0]} {num2} = {result}'
+    msg = f'{num1} {operation[0]} {num2} = {float(result):.3f}'
     print(msg)
     OutputUtils.display_message(msg, 'Result')
 

@@ -17,5 +17,6 @@ class OutputUtils():
             font=GuiSettings.font,
             background_color=GuiSettings.background_color,
             text_color=GuiSettings.text_color,
-            button_color = (GuiSettings.button_color_foreground, GuiSettings.button_color_background)
+            button_color = (GuiSettings.button_color_foreground, GuiSettings.button_color_background),
+            grab_anywhere = True
         )
