@@ -1,4 +1,4 @@
-from enum import StrEnum, auto
+from enum import StrEnum
 
 class GuiSettings(StrEnum):
     """Store common GUI settings as enumerated constants."""

@@ -1,4 +1,4 @@
-from enum import StrEnum, auto
+from enum import StrEnum
 
 class MathOperation(StrEnum):
     addition= '+'
@@ -29,3 +29,18 @@ class MathOperation(StrEnum):
                 return '% Modulo'
             case _:
                 return 'Operation not found'
+
+    @staticmethod
+    def to_string(val: str):
+        match val[0]:
+            case '+':
+                return MathOperation.addition
+            case '-':
+                return MathOperation.subtraction
+            case '*':
+                return MathOperation.multiplication
+            case '/':
+                return MathOperation.division
+            case '%':
+                return MathOperation.modulo
+

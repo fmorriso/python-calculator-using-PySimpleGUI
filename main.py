@@ -38,13 +38,14 @@ def verify_get_whole_number_works():
     print(f'{type(n)=}, {n=}, {n*2=}')
 
 
-def get_operation() -> str:
+def get_operation() -> MathOperation:
     choices: list[str] = MathOperation.get_operations_list()
     opr = InputUtils.get_single_choice('Operation', 'Select an operation', choices)
-    return opr
+    math_opr = MathOperation.to_string(opr)
+    return math_opr
 
 
-def perform_operation(num1, num2, operation):
+def perform_operation(num1, num2, operation: MathOperation):
     match operation:
         case MathOperation.addition:
             return num1 + num2
@@ -61,7 +62,7 @@ def perform_operation(num1, num2, operation):
 def perform_one_calculation():
     num1 = InputUtils.get_decimal_number('First', 'Enter the first number:')
     num2 = InputUtils.get_decimal_number('Second', 'Enter the second number:')
-    operation = get_operation()
+    operation: MathOperation = get_operation()
     result = perform_operation(num1, num2, operation)
     msg = f'{num1} {operation[0]} {num2} = {result}'
     print(msg)
