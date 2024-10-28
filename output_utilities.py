@@ -8,6 +8,7 @@ class OutputUtils():
 
     @staticmethod
     def display_message(msg: str, title: str) -> None:
+        # TODO: replace with custom window that can be sized using PyAutoGUI scaling
         sg.popup(
             msg,
             title=title,

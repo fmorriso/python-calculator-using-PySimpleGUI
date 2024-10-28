@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="Use enumeration for valid mathematical operations">
+    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="make output windows movable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/output_utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +128,7 @@
       <workItem from="1730081141115" duration="595000" />
       <workItem from="1730123652428" duration="1319000" />
       <workItem from="1730126648553" duration="696000" />
-      <workItem from="1730127914243" duration="3210000" />
+      <workItem from="1730127914243" duration="4391000" />
     </task>
     <task id="LOCAL-00001" summary="add README and git ignore">
       <option name="closed" value="true" />
@@ -387,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730128985914</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="make output windows movable">
+      <option name="closed" value="true" />
+      <created>1730134156278</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1730134156279</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +435,8 @@
     <MESSAGE value="minor refactoring, add comments" />
     <MESSAGE value="calculations working" />
     <MESSAGE value="Use enumeration for valid mathematical operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use enumeration for valid mathematical operations" />
+    <MESSAGE value="make output windows movable" />
+    <option name="LAST_COMMIT_MESSAGE" value="make output windows movable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
