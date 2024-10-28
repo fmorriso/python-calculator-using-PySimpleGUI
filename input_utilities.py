@@ -3,7 +3,7 @@ from decimal import Decimal
 import numpy
 
 import PySimpleGUI as sg
-from pygame.display import get_window_size
+
 
 from gui_scaling import GuiScaling
 from gui_settings import GuiSettings
