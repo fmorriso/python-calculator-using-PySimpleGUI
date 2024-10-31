@@ -10,7 +10,7 @@ instead of input() and print().
 | PySimpleGUI |    5.0.7 |
 | Numpy       |    2.1.2 |
 | PyAutoGUI   |   0.9.54 |
-| VSCode      |   1.94.2 |
+| VSCode      |   1.95.0 |
 | PyCharm     | 2024.2.4 |
 
 ## References
@@ -20,8 +20,9 @@ instead of input() and print().
 
 ## Change History
 
-| Date       | Description                        |
-|:-----------|:-----------------------------------|
-| 2024-10-26 | Initial creation                   |
-| 2024-10-27 | Full calculation mode implemented. |
-| 2024-10-28 | Add MathOperation enumeration.     |
+| Date       | Description                          |
+|:-----------|:-------------------------------------|
+| 2024-10-26 | Initial creation                     |
+| 2024-10-27 | Full calculation mode implemented.   |
+| 2024-10-28 | Add MathOperation enumeration.       |
+| 2024-10-30 | Verify code works with latest VSCode |
