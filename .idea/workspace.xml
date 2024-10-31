@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="Verify code works with VSCode 1.95.0" />
+    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="ignore .idea directory, subdirectories and files">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,6 +136,8 @@
       <workItem from="1730219072245" duration="16000" />
       <workItem from="1730219318276" duration="2135000" />
       <workItem from="1730344023426" duration="103000" />
+      <workItem from="1730385053544" duration="107000" />
+      <workItem from="1730395868786" duration="151000" />
     </task>
     <task id="LOCAL-00001" summary="add README and git ignore">
       <option name="closed" value="true" />
@@ -429,7 +435,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730344104571</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="ignore .idea directory, subdirectories and files">
+      <option name="closed" value="true" />
+      <created>1730384904441</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1730384904441</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +462,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add references" />
     <MESSAGE value="add Yes/No dialog test" />
     <MESSAGE value="update tools used" />
     <MESSAGE value="remove unnecessary comment" />
@@ -473,9 +486,10 @@
     <MESSAGE value="change display_message to use custom window" />
     <MESSAGE value="access operation enumeration attributes via built in .name and .value" />
     <MESSAGE value="Verify code works with VSCode 1.95.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Verify code works with VSCode 1.95.0" />
+    <MESSAGE value="ignore .idea directory, subdirectories and files" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore .idea directory, subdirectories and files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1730241970551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1730385060713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
