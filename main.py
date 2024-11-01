@@ -14,7 +14,7 @@ def get_operation() -> MathOperation:
     """Prompt the user for a valid mathematical operation and return it as an enumerated value."""
     choices: list[str] = MathOperation.get_operations_list()
     opr = InputUtils.get_single_choice('Operation', 'Select an operation', choices)
-    math_opr = MathOperation.to_string(opr)
+    math_opr = MathOperation.from_string(opr)
     return math_opr
 
 

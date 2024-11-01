@@ -31,7 +31,8 @@ class MathOperation(StrEnum):
                 return 'Operation not found'
 
     @staticmethod
-    def to_string(val: str):
+    def from_string(val: str):
+        """Convert a string to an instance of MathOperation"""
         match val[0]:
             case '+':
                 return MathOperation.addition
@@ -43,4 +44,5 @@ class MathOperation(StrEnum):
                 return MathOperation.division
             case '%':
                 return MathOperation.modulo
+
 
