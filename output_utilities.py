@@ -9,19 +9,19 @@ class OutputUtils():
 
     @staticmethod
     def get_scaled_size() -> (int, int):
-        """get the scalesd size in the form of a tuple (width, height)."""
+        """get the scaled size in the form of a tuple (width, height)."""
         scaling = GuiScaling(0.1)
         return scaling.scaled_width, scaling.scaled_height
 
     @staticmethod
-    def display_message(msg: str, title: str) -> None:
+    def display_message(message: str, title: str) -> None:
         print(f'{OutputUtils.get_scaled_size()=}')
-        print(msg)
-        window_width_in_characters = max(int(len(msg)/2), 50)
-        window_height_in_rows = max(int(len(msg)/10), 2)
+        print(message)
+        window_width_in_characters = max(int(len(message) / 2), 50)
+        window_height_in_rows = max(int(len(message) / 10), 2)
         layout = [
             [sg.Text(
-                text=msg,
+                text=message,
                 text_color = GuiSettings.text_color,
                 background_color = GuiSettings.background_color,
                 size = (window_width_in_characters, window_height_in_rows))

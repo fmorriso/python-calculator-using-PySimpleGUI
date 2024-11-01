@@ -10,7 +10,7 @@ instead of input() and print().
 | PySimpleGUI |    5.0.7 |
 | Numpy       |    2.1.2 |
 | PyAutoGUI   |   0.9.54 |
-| VSCode      |   1.95.0 |
+| VSCode      |   1.95.1 |
 | PyCharm     | 2024.2.4 |
 
 ## References
