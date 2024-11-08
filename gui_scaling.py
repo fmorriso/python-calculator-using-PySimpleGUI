@@ -2,6 +2,7 @@ import pyautogui
 
 
 class GuiScaling:
+    """A class that provides scaling information about the device the current program is running on."""
 
     __screen_pct: float = 0.0
 
@@ -34,6 +35,17 @@ class GuiScaling:
         return self.__scaled_height
 
     def __init__(self, pct: float = 0.2, square: bool = False, multiple_of: int = 10):
+        """Create an instance of this class.
+        
+        :param self: reference to current instance of this class        
+        :param pct: percentage of available device screen size to use, expressed as a value between 0 and 1.
+        :type pct: float 
+        :param square: True if the resulting scaled size should be square; otherwise False, meaning the resulting scaling should be rectangular.
+        :type square: bool 
+        :param multiple_of: The multiple of value that the scaled width and height will be rounded too.
+        :type multiple_of: int
+        """
+        
         # calculate GUI size as a percentage of device screen size
         self.__device_width, self.__device_height = pyautogui.size()
         self.__screen_pct: float = float(pct)
