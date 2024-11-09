@@ -56,3 +56,13 @@ class GuiScaling:
             (self.device_height * self.__screen_pct // multiple_of) * multiple_of)
         self.__scaled_width: int = self.scaled_height if square else int(
             (self.device_width * self.__screen_pct // multiple_of) * multiple_of)
+
+    def __str__(self) -> str:
+        return (f'device width: {self.__device_width}, device height: {self.__device_height}'
+                f'\n\tscaled width: {self.__scaled_width}, '
+                f'scaled height{self.__scaled_height}')
+
+    def __repr__(self) -> str:
+        return (f'device width: {self.__device_width}, device height: {self.__device_height}'
+                f'\n\tscaled width: {self.__scaled_width}, '
+                f'scaled height{self.__scaled_height}')

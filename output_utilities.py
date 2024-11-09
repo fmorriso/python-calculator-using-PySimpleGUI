@@ -5,12 +5,13 @@ from gui_scaling import GuiScaling
 from gui_settings import GuiSettings
 
 
-class OutputUtils():
+class OutputUtils:
 
     @staticmethod
     def get_scaled_size() -> (int, int):
         """get the scaled size in the form of a tuple (width, height)."""
         scaling = GuiScaling(0.1)
+        print(f'{scaling=}')
         return scaling.scaled_width, scaling.scaled_height
 
     @staticmethod
@@ -33,7 +34,7 @@ class OutputUtils():
         ]
 
         # Window
-        scaled = GuiScaling(0.3333)
+        scaled = GuiScaling(0.2)
         window: Window = sg.Window(
             title = title,
             layout = layout,
@@ -42,8 +43,7 @@ class OutputUtils():
             keep_on_top = True,
             size = (scaled.scaled_width, scaled.scaled_height),
             grab_anywhere = True,
-            modal = True,
-            scaling = False
+            modal = True
             )
 
         # Event loop

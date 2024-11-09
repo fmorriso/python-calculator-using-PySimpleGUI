@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="refactor method to better reflect what it does.">
+    <list default="true" id="e51e7fda-47ee-4484-b17d-096f187c8bc1" name="Changes" comment="use new VSCode PyLance extension to add DocString to a class and a method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui_scaling.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui_scaling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/output_utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +143,10 @@
       <workItem from="1730583763868" duration="462000" />
       <workItem from="1730584835823" duration="611000" />
       <workItem from="1730585613566" duration="23000" />
+      <workItem from="1731096810188" duration="13000" />
+      <workItem from="1731096845153" duration="122000" />
+      <workItem from="1731165634076" duration="313000" />
+      <workItem from="1731175309559" duration="1061000" />
     </task>
     <task id="LOCAL-00001" summary="add README and git ignore">
       <option name="closed" value="true" />
@@ -478,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730470997438</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="use new VSCode PyLance extension to add DocString to a class and a method.">
+      <option name="closed" value="true" />
+      <created>1731096949547</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1731096949547</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +511,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Start of GuiSettings enumeration" />
     <MESSAGE value="completed get_yesno_response in InputUtils" />
     <MESSAGE value="rudimentary get_single_choice" />
     <MESSAGE value="improved get_single_choice" />
@@ -522,9 +535,10 @@
     <MESSAGE value="minor refactoring" />
     <MESSAGE value="remove unused import" />
     <MESSAGE value="refactor method to better reflect what it does." />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor method to better reflect what it does." />
+    <MESSAGE value="use new VSCode PyLance extension to add DocString to a class and a method." />
+    <option name="LAST_COMMIT_MESSAGE" value="use new VSCode PyLance extension to add DocString to a class and a method." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1730470734703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/calculator_using_PySimpleGUI$main.coverage" NAME="main Coverage Results" MODIFIED="1731190557113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
