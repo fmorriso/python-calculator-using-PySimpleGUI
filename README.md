@@ -6,12 +6,12 @@ instead of input() and print().
 
 | Tool        |  Version |
 |:------------|---------:|
-| Python      |   3.13.0 |
+| Python      |   3.13.1 |
 | PySimpleGUI |    5.0.7 |
 | Numpy       |    2.1.2 |
 | PyAutoGUI   |   0.9.54 |
-| VSCode      |   1.95.2 |
-| PyCharm     | 2024.2.4 |
+| VSCode      |   1.95.3 |
+| PyCharm     | 2024.3.0 |
 
 ## References
 * [PySimpleGUI Popups](https://docs.pysimplegui.com/en/latest/documentation/module/popups/)
