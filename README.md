@@ -27,3 +27,4 @@ instead of input() and print().
 | 2024-10-28 | Add MathOperation enumeration.                                 |
 | 2024-10-30 | Verify code works with latest VSCode                           |
 | 2024-11-08 | Upgrade to VSCode 1.95.2 and use new PyLance DocString feature |
+| 2024-12-09 | verify code works with python 3.13.1                           |
