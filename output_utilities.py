@@ -18,7 +18,8 @@ class OutputUtils:
     def display_message(message: str, title: str) -> None:
         print(f'{OutputUtils.get_scaled_size()=}')
         print(message)
-        window_width_in_characters = max(int(len(message) / 2), 50)
+        window_width_in_characters = max(int(len(message) * 4), 50)
+        print(f'{window_width_in_characters=}')
         window_height_in_rows = max(int(len(message) / 10), 2)
         layout = [
             [sg.Text(
@@ -34,14 +35,14 @@ class OutputUtils:
         ]
 
         # Window
-        scaled = GuiScaling(0.2)
+        scaled = GuiScaling(0.333)
         window: Window = sg.Window(
             title = title,
             layout = layout,
             font = GuiSettings.font,
             background_color = GuiSettings.background_color,
             keep_on_top = True,
-            size = (scaled.scaled_width, scaled.scaled_height),
+            size = (scaled.scaled_width, int(scaled.scaled_height / 2)),
             grab_anywhere = True,
             modal = True
             )
