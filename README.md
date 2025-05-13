@@ -6,12 +6,17 @@ instead of input() and print().
 
 | Tool        |  Version |
 |:------------|---------:|
-| Python      |   3.13.1 |
-| PySimpleGUI |    5.0.8 |
+| Python      |   3.13.3 |
 | Numpy       |    2.2.1 |
 | PyAutoGUI   |   0.9.54 |
-| VSCode      |   1.96.2 |
-| PyCharm     | 2024.3.1 |
+| PySimpleGUI |   5.0.10 |
+| VSCode      |  1.100.0 |
+| PyCharm     | 2025.1.1 |
+
+```
+python -m pip uninstall PySimpleGUI
+pip install -i https://PySimpleGUI.net/install PySimpleGUI
+```
 
 ## References
 * [PySimpleGUI Popups](https://docs.pysimplegui.com/en/latest/documentation/module/popups/)
@@ -29,3 +34,4 @@ instead of input() and print().
 | 2024-11-08 | Upgrade to VSCode 1.95.2 and use new PyLance DocString feature |
 | 2024-12-09 | verify code works with python 3.13.1                           |
 | 2025-01-06 | adjust scaling and verify with latest versions of libraries    |
+| 2025-05-12 | add requirements.txt                                           |                                                               |

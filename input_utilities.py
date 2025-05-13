@@ -15,7 +15,7 @@ class InputUtils:
 
     @staticmethod
     def get_scaled_size() -> (int, int):
-        """get the scalesd size in the form of a tuple (width, height)."""
+        """get the scaled size in the form of a tuple (width, height)."""
         scaling = GuiScaling()
         return scaling.scaled_width, scaling.scaled_height
 

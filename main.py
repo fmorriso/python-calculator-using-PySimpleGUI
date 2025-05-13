@@ -1,5 +1,6 @@
 import platform
 import sys
+from importlib.metadata import version
 
 from input_utilities import InputUtils
 from mathematical_operations import MathOperation
@@ -8,6 +9,10 @@ from output_utilities import OutputUtils
 
 def get_python_version() -> str:
     return f'{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}'
+
+
+def get_package_version(package_name: str) -> str:
+    return version(package_name)
 
 
 def get_operation() -> MathOperation:
@@ -45,9 +50,6 @@ def perform_one_calculation():
 
 
 def main():
-    msg = f'Python version: {get_python_version()} on {platform.system()} {platform.release()}'
-    print(msg)
-
     keep_calculating = True
     while keep_calculating:
         perform_one_calculation()
@@ -59,4 +61,10 @@ def main():
 
 
 if __name__ == '__main__':
+    msg = f'Python version: {get_python_version()} on {platform.system()} {platform.release()}'
+    print(msg)
+
+    msg = f'NumPy version: {get_package_version("numpy")}'
+    print(msg)
+
     main()
