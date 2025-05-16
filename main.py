@@ -23,7 +23,7 @@ def get_operation() -> MathOperation:
     return math_opr
 
 
-def perform_operation(num1, num2, operation: MathOperation):
+def perform_operation(num1, num2, operation: MathOperation) -> None | float:
     """Given two numbers and an operation, perform the operation and return the result."""
     match operation:
         case MathOperation.addition:
@@ -36,6 +36,7 @@ def perform_operation(num1, num2, operation: MathOperation):
             return num1 / num2
         case MathOperation.modulo:
             return num1 % num2
+    return None
 
 
 def perform_one_calculation():
