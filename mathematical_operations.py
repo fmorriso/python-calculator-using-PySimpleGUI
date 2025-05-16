@@ -1,4 +1,5 @@
 from enum import StrEnum
+from typing import Any
 
 class MathOperation(StrEnum):
     addition= '+'
@@ -16,7 +17,7 @@ class MathOperation(StrEnum):
 
 
     def __str__(self):
-        match self.name:
+        match self.value:
             case '+':
                 return '+ Addition'
             case '-':
@@ -27,8 +28,9 @@ class MathOperation(StrEnum):
                 return '/ Division'
             case '%':
                 return '% Modulo'
-            case _:
-                return 'Operation not found'
+
+        return None
+
 
     @staticmethod
     def from_string(val: str):
@@ -44,5 +46,6 @@ class MathOperation(StrEnum):
                 return MathOperation.division
             case '%':
                 return MathOperation.modulo
+        return None
 
 
